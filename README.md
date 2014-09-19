@@ -8,6 +8,7 @@ The project contains two blocks:
 
  - `manu343726/bandit`: The bandit block. It contains the library dependencies and building configuration.
  - `manu343726/bandit_blocktests`: A block to test the bandit block and check if the dependencies are resolved correctly.
+ - `examples/bandit`: A block containing examples of the usage of bandit for biicode users.
 
 ## Issues and feedback
 
