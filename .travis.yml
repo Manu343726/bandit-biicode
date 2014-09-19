@@ -31,4 +31,4 @@ script:
   - bii cpp:build
 
   - ./bin/manu343726_bandit_blocktests_test
-  - ./bin/examples_bandit_example_beginners
+  - ./bin/examples_bandit_example_beginner
