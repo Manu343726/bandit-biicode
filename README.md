@@ -1,4 +1,4 @@
-# bandit biicode
+# bandit biicode [![Build Status](https://travis-ci.org/Manu343726/bandit-biicode.svg)](https://travis-ci.org/Manu343726/bandit-biicode)
 
 Development and maintainance of the biicode block for the [Bandit C++11 unit testing framework](http://banditcpp.org/).
 
