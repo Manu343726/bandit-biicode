@@ -16,7 +16,7 @@
 #include "constraints/constraints.h"
 #include "fluent/fluent.h"
 #include "assertionexception.h"
-#include "assert.h"
+#include "./assert.h"
 #include "assertmacro.h"
 #include "exceptions.h"
 
