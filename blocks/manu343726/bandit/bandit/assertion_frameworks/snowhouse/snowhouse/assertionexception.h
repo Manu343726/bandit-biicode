@@ -7,6 +7,10 @@
 #ifndef IGLOO_ASSERTIONEXCEPTION_H
 #define IGLOO_ASSERTIONEXCEPTION_H
 
+#ifdef _MSC_VER
+#define noexcept
+#endif
+
 namespace snowhouse {
   class AssertionException : public std::exception
   {

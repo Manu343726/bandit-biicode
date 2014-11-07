@@ -1,2 +1,2 @@
-cpp: {generator: Unix Makefiles}
+cpp: {generator: Visual Studio 12 2013}
 os: {arch: 32bit, family: Linux, subfamily: ManjaroLinux, version: 0.8.10}
