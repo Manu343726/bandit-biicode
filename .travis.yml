@@ -14,21 +14,12 @@ install:
   - if [ "$CXX" == "g++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50; fi
 
   # install biicode:
-  - wget https://s3.amazonaws.com/biibinaries/release/1.6/bii-ubuntu32_1_6.deb 
-  - (! sudo dpkg -i bii-ubuntu32_1_6.deb ) && sudo apt-get -f install
-  - rm bii-ubuntu32_1_6.deb
-  
-  # Update cmake: 
-  - wget http://www.cmake.org/files/v3.0/cmake-3.0.1-Linux-i386.tar.gz
-  - tar -xzf cmake-3.0.1-Linux-i386.tar.gz
-  - sudo cp -fR cmake-3.0.1-Linux-i386/* /usr
-  - rm -rf cmake-3.0.1-Linux-i386
-  - rm cmake-3.0.1-Linux-i386.tar.gz
+  - wget http://apt.biicode.com/install.sh && chmod +x install.sh && ./install.sh
+  - bii setup:cpp
 
 script:
   - bii find
   - bii cpp:configure
   - bii cpp:build
 
-  - ./bin/manu343726_bandit_blocktests_test
-  - ./bin/examples_bandit_example_beginner
+  - ./bin/examples_bandit_example_beginner --reporter=info
