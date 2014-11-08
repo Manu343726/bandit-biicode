@@ -18,8 +18,9 @@ install:
   - bii setup:cpp
 
 script:
+  - bii clean
   - bii find
-  - bii cpp:configure
+  - bii cpp:configure -G "Unix Makefiles"
   - bii cpp:build
 
   - ./bin/examples_bandit_example_beginner --reporter=info
